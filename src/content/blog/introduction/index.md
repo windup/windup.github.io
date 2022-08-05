@@ -11,6 +11,9 @@ tags:
 
 WINDUP is an assembly of tools that support large-scale Java application modernization and migration projects across a broad range of transformations and use cases. It accelerates application code analysis, supports effort estimation, accelerates code migration, and helps you move applications to the cloud and containers.
 
+The CLI and Web UI distributions have now been released upstream. 
+The Web UI can be run locally on a laptop, centrally on a server, or installed within an OpenShift cluster via the templates included within the distribution.  
+
 The core of WINDUP is an extensible rules engine that analyzes Java applications.
 
 The input into the analysis is a collection of Java archives or project source code folders.
