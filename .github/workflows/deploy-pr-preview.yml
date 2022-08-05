@@ -31,4 +31,5 @@ jobs:
         uses: mshick/add-pr-comment@v1
         with:
           message: "🚀 Deployed Preview: http://${{steps.surge-url.outputs.result}} ✨"
+          proxy-url: https://add-pr-comment-proxy-94idvmwyie-uc.a.run.app
           repo-token: ${{ secrets.GITHUB_TOKEN }}
