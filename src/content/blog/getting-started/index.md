@@ -79,11 +79,11 @@ If you are installing on a Windows operating system:
 1. Navigate to the `<WINDUP_UI_HOME>/openshift/templates` directory.
 1. Copy the content of file `web-template-empty-dir-executor.json`.
 1. Go to Openshift Web Console, *Developer* view
-   1. Paste it in the "Import YAML / JSON" wizard and save it.
-   1. Click on the `+Add` link and open the `All services` catalog
-   1. Input `windup` (or `migration`) in the search text box and click on the Windup template ![Windup template in Catalog](https://github.com/windup/windup-openshift/raw/master/docs/catalog_templates.png)
-   1. Click on `Instantiate Template`
-   1. Scroll down to the bottom to deploy with the working default values and click on `Create` button
-   1. In the *Topology* page, click on the `windup-web-console` application then click the `Resources` tab
-   1. Click the `secure-windup-web-console` route to open the Windup web console
-   1. Enter the *user* `migration` and *password* `password` and click `Log in`
+1. Paste it in the "Import YAML / JSON" wizard and save it.
+1. Click on the `+Add` link and open the `All services` catalog
+1. Input `windup` (or `migration`) in the search text box and click on the Windup template ![Windup template in Catalog](https://github.com/windup/windup-openshift/raw/master/docs/catalog_templates.png)
+1. Click on `Instantiate Template`
+1. Scroll down to the bottom to deploy with the working default values and click on `Create` button
+1. In the *Topology* page, click on the `windup-web-console` application then click the `Resources` tab
+1. Click the `secure-windup-web-console` route to open the Windup web console
+1. Enter the *user* `migration` and *password* `password` and click `Log in`
