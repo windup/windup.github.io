@@ -14,7 +14,7 @@ const AboutPage = ({ data }) => {
     },
     {
       title: "Web Console",
-      description: "Local install",
+      description: "Web UI for local installation and Openshift deployment",
       url: `https://repo1.maven.org/maven2/org/jboss/windup/web/mta-web-distribution/${windupVersion}/mta-web-distribution-${windupVersion}-with-authentication.zip`,
       sha1: `https://repo1.maven.org/maven2/org/jboss/windup/web/mta-web-distribution/${windupVersion}/mta-web-distribution-${windupVersion}-with-authentication.zip.sha1`,
     },
