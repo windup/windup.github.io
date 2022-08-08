@@ -56,7 +56,7 @@ For a full list of CLI target technologies
 ./windup-cli --listTargetTechnologies
 ```
 
-## Installing the Web UI
+## Installing the Web UI locally
 
 Extract the .zip file to a directory of your choice <WINDUP_UI_HOME>
 If you are installing on a Windows operating system:
@@ -75,3 +75,21 @@ Open a browser and navigate to [http://localhost:8080/windup-ui](http://localhos
 The default *user* is **migration** and the default *password* is **password**.
 
 Follow the wizard to create your first migration project, upload applications for analysis, define your analysis configuration, execute the analysis and review the reports.
+
+## Installing the Web UI on OpenShift
+
+Extract the .zip file to a directory of your choice <WINDUP_UI_HOME> directory.
+
+Navigate to the <WINDUP_UI_HOME>/openshift/templates directory.
+
+Copy the content of file web-template-empty-dir-executor.json.
+
+Paste it in the "Import YAML / JSON" wizard in Openshift Web Console.
+
+Save and wait for the deployment to end.
+
+In the **Topology** view, click on the **windup-web-console** application then click the **Resources** tab.
+
+Click the **secure-windup-web-console** route to open the web console in a new browser.
+
+Enter the user name **migration** and password **password** and click **Log in**.
