@@ -1,5 +1,5 @@
 import "./src/styles/global.css";
-require('prismjs/themes/prism-tomorrow.css')
+require('prismjs/themes/prism.css');
 
 // Set focus to top of the page after a route update. This is the
 // expected behavior. Otherwise, screen readers will not announce
