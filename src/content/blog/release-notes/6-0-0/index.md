@@ -1,13 +1,12 @@
 ---
 title: Windup 6.0.0 Release Notes
-description: Summary of the changes available in this release
+description: Windup 6.0.0 Release Notes
 featured: true
 author: mrizzi
 date: 2022-08-09T00:00:00Z
 tags:
   - release notes
 ---
-# Windup 6.0.0 Release Notes
 
 ## New and updated features
 
