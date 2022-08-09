@@ -14,6 +14,8 @@ tags:
 * New [Tackle-DiVA (Data-intensive Validity Analyzer)](https://github.com/konveyor/tackle-diva) addon from an IBM Research team to analyze application transactions (thanks to [akihikot](https://github.com/akihikot), [YasuKatsuno](https://github.com/YasuKatsuno), [rofrano](https://github.com/rofrano)): add the `--enableTransactionReport` option to see it in action
 * New YAML addon to have the YAML files rendered in reports to make it easier to check where a rule has identified an issue, if any
 * Updated to latest and greatest Forge and Furnace versions (thanks [gastaldi](https://github.com/gastaldi))
+* Improved `<project>` XML rule condition to search for artifacts in `pom.xml` files within `<parent>`, `<dependencyManagement>`, `<dependencies>`, `<pluginManagement>`, `<plugins>` blocks
+
 
 ## New and updated rulesets and recipes
 
