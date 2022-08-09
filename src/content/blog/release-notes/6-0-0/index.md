@@ -8,6 +8,11 @@ tags:
   - release notes
 ---
 
+## Artifacts
+
+* [CLI](https://repo1.maven.org/maven2/org/jboss/windup/windup-cli/6.0.0.Final/windup-cli-6.0.0.Final-offline.zip)
+* [Web Console](https://repo1.maven.org/maven2/org/jboss/windup/web/windup-web-distribution/6.0.0.Final/windup-web-distribution-6.0.0.Final-with-authentication.zip)
+
 ## New and updated features
 
 * New [Tackle-DiVA (Data-intensive Validity Analyzer)](https://github.com/konveyor/tackle-diva) addon from an IBM Research team to analyze application transactions (thanks to [akihikot](https://github.com/akihikot), [YasuKatsuno](https://github.com/YasuKatsuno), [rofrano](https://github.com/rofrano)): add the `--enableTransactionReport` option to see it in action
