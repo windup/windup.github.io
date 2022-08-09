@@ -1,6 +1,7 @@
 display: true
-title: Great news! Windup has a new website!
+title: Do you want to know more about Windup?
+image: windup_logo.png
 end_date: 2023-01-01T8:00:00-08:00
 background_color: slate
 link_text: Read more
-link_url: /blog/new-website/
+link_url: /blog/introduction/
