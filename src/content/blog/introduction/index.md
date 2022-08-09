@@ -1,6 +1,7 @@
 ---
 title: The WINDUP Project
 description: An overview of the project
+image: windup_logo.png
 featured: true
 author: PhilipCattanach
 date: 2022-08-05T00:00:00Z

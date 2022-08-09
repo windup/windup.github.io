@@ -22,7 +22,7 @@ const PostCard = ({ post, condensed }) => {
           {post.frontmatter.title}
         </h2>
         {condensed !== true && (
-          <p className="line-clamp-3">
+          <p className="line-clamp-3" style={{ minWidth: 350 }}>
             {post.frontmatter.description
               ? post.frontmatter.description
               : post.excerpt}
