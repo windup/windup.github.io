@@ -15,7 +15,7 @@ tags:
 * New YAML addon to have the YAML files rendered in reports to make it easier to check where a rule has identified an issue, if any
 * Updated to latest and greatest Forge and Furnace versions (thanks [gastaldi](https://github.com/gastaldi))
 
-## New and updated rules sets
+## New and updated rulesets and recipes
 
 This release includes rules sets for:
 
