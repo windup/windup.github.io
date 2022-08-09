@@ -23,3 +23,11 @@ This release includes rules sets for:
 * Migrating SpringBoot applications to Azure AKS (thanks [agoncal](https://github.com/agoncal))
 * Upgrading Java applications to OpenJDK 17 (thanks [neugens](https://github.com/neugens), [gnu-andrew](https://github.com/gnu-andrew) and [ItsLeon15](https://github.com/ItsLeon15))
 * Upgrading Java applications from JavaEE 8 to JakartaEE 9
+
+Regarding the JavaEE 8 to Jakarta EE 9 transformation, Windup has new [Openrewrite](https://docs.openrewrite.org/) recipes for automating these changes:
+
+* Migrate dependencies declared within pom.xml files
+* Migrate package `import` statements
+* Update XML deployment descriptors
+* Update configuration properties
+* Rename SPI files
