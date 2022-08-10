@@ -8,7 +8,7 @@ tags:
   - docs
 ---
 
-There are 2 distributions available within the first upstream release; the [CLI](#installing-the-cli) and the [Web UI](#installing-the-web-ui).
+There are 2 distributions available within the first upstream release; the [CLI](#installing-the-cli) and the [Web UI](#installing-the-web-ui-locally).
 
 ## Prerequisites
 

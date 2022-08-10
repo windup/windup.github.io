@@ -9,18 +9,18 @@ const AboutPage = ({ data }) => {
     {
       title: "CLI",
       description: "Command Line Interface",
-      url: `https://repo1.maven.org/maven2/org/jboss/windup/mta-cli/${windupVersion}/mta-cli-${windupVersion}-offline.zip`,
-      sha1: `https://repo1.maven.org/maven2/org/jboss/windup/mta-cli/${windupVersion}/mta-cli-${windupVersion}-offline.zip.sha1`,
+      url: `https://repo1.maven.org/maven2/org/jboss/windup/windup-cli/${windupVersion}/windup-cli-${windupVersion}-offline.zip`,
+      sha1: `https://repo1.maven.org/maven2/org/jboss/windup/windup-cli/${windupVersion}/windup-cli-${windupVersion}-offline.zip.sha1`,
     },
     {
       title: "Web Console",
       description: "Web UI for local installation and Openshift deployment",
-      url: `https://repo1.maven.org/maven2/org/jboss/windup/web/mta-web-distribution/${windupVersion}/mta-web-distribution-${windupVersion}-with-authentication.zip`,
-      sha1: `https://repo1.maven.org/maven2/org/jboss/windup/web/mta-web-distribution/${windupVersion}/mta-web-distribution-${windupVersion}-with-authentication.zip.sha1`,
+      url: `https://repo1.maven.org/maven2/org/jboss/windup/web/windup-web-distribution/${windupVersion}/windup-web-distribution-${windupVersion}-with-authentication.zip`,
+      sha1: `https://repo1.maven.org/maven2/org/jboss/windup/web/windup-web-distribution/${windupVersion}/windup-web-distribution-${windupVersion}-with-authentication.zip.sha1`,
     },
   ];
   const quickstart = `https://github.com/windup/windup-quickstarts/tree/${windupVersion}`;
-  const previousReleases = `https://repo1.maven.org/maven2/org/jboss/windup/`;
+  // const previousReleases = `https://repo1.maven.org/maven2/org/jboss/windup/`;
 
   return (
     <div className="text-slate-900">
@@ -128,6 +128,7 @@ const AboutPage = ({ data }) => {
           </div>
         </div>
 
+{/*
         <div className="max-w-7xl mx-auto py-6 sm:px-6 lg:px-8">
           <h1 className="text-2xl">
             For previous releases go{" "}
@@ -141,6 +142,7 @@ const AboutPage = ({ data }) => {
             </a>
           </h1>
         </div>
+*/}
       </section>
     </div>
   );

@@ -23,6 +23,12 @@ The analysis configuration allows the user to specify the analysis configuration
 
 The output from an analysis is a collection of reports that detail the changes required to the input applications to adopt the target technologies. The reports detail which lines of code need to change, why, provide links supporting information and quantify the effort involved.
 
+## Reporting issues
+
+Did you try Windup and find an issue? Or something missing/wrong in this website?
+
+Please share it with us reporting an [issue here](https://issues.redhat.com/projects/WINDUP/).
+
 ## Coming soon
 Future releases of WINDUP will include a community operator to automate the deployment of the Web UI on Kubernetes, and IDE plugins/extensions for VSCode, IntelliJ, Eclipse, Eclipse CHE and CodeReady Studio.
 
