@@ -176,7 +176,7 @@ const IndexPage = () => {
           <div className="flex-1 mt-5 mx-auto sm:w-9/12 lg:mt-0 lg:w-auto">
             <StaticImage
               src="../images/custom-rule.png"
-              alt="Web Console"
+              alt="Custom rule"
               className="w-full border"
             />
           </div>
@@ -189,8 +189,7 @@ const IndexPage = () => {
               rule sets and target runtime labels. Custom rules can be developed
               to extend existing rule sets, build new migration paths, or
               enforce certain code standards in your teams. Best of all, it’s
-              very easy to write new rules - either as XML, or using the guided
-              rules editor in the IDE plug-ins. Target runtime labels assess the
+              very easy to write new rules - either as XML or Groovy. Target runtime labels assess the
               technologies discovered within applications to determine if they
               are supported by a specific runtime. Wildfly and Tomcat are the 2
               shipped target runtime labels.
