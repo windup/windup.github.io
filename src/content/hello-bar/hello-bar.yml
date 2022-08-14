@@ -4,4 +4,4 @@ image: windup_logo.png
 end_date: 2023-01-01T8:00:00-08:00
 background_color: slate
 link_text: Read more
-link_url: /blog/introduction/
+link_url: blog/introduction/
