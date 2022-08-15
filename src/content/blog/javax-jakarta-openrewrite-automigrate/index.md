@@ -10,7 +10,7 @@ tags:
 
 When modernizing applications a popular path is the transformation from one able to build and run on Java EE 8 to doing the same on Jakarta EE 9. Windup can help users discover the changes they need to make to their applications to achieve this, and using it in conjunction with OpenRewrite an auto-migration can be performed. This article will demonstrate an auto-migration on a sample application.
 
-##Build of Java EE 8 Application
+## Build of Java EE 8 Application
 
 We will be migrating complete-duke, an app created to show the steps required to migrate from a Java EE application to one using Jakarta EE instead. Clone a copy of the app to your local machine and checkout the start-tutorial branch:
 
