@@ -108,7 +108,7 @@ from the root of the completeDuke source folder, the transformed source project 
 
 ## Deployment to Jakarta EE 9 Application Server
 
-I’ll be using [Wildfly 26.1.0-Preview](https://github.com/wildfly/wildfly/releases/download/26.1.0.Final/wildfly-preview-26.1.0.Final.zip) as my Jakarta EE9 Application Server. Wildfly has a bytecode transformation tool which deals with these issues so to prove our transformed app is Jakarta EE 9- compliant, we’ll use the unmanaged deployment mode, which bypasses the bytecode transformation.
+I’ll be using Wildfly 26.1.0-Preview, which you can download  [here](https://github.com/wildfly/wildfly/releases/download/26.1.0.Final/wildfly-preview-26.1.0.Final.zip), as my Jakarta EE9 Application Server. Wildfly has a bytecode transformation tool which deals with these issues so to prove our transformed app is Jakarta EE 9- compliant, we’ll use the unmanaged deployment mode, which bypasses the bytecode transformation.
 
 First, attempt to deploy the original complete-duke.war built from the untransformed source code. The easiest way to do this in unmanaged mode is to use the cli tools supplied with Wildfly. Start the server by going to the bin folder of the unzipped distribution and run
 
