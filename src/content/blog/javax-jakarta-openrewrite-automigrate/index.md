@@ -31,7 +31,7 @@ Build the application with java 11 using
 
 In the target subfolder will be the built application complete-duke.war. We will attempt to deploy this untransformed application to a Jakarta EE 9 compliant Application Server later in the process.
 
-##Analysis of Java EE 8 Application
+## Analysis of Java EE 8 Application
 
 Now we’re happy we can build the Java EE 8 application, let’s analyse it using Windup to see what needs to change if we wish to migrate it to Jakarta EE 9.
 
@@ -63,7 +63,7 @@ Click on complete-duke.war in the Application List then on the Issues tab to see
 
 We can see the issues are the package name changes, property names, Bootstrapping file names and changes required to XML.
 
-##Auto-Migration to Jakarta EE 9
+## Auto-Migration to Jakarta EE 9
 
 The CLI flavour of Windup has openrewrite recipes bundled which allow for the auto-migration of an app such as complete-duke to run on a Jakarta EE9-compliant server. Using the windup-cli shell script with the -–openrewrite switch, these recipes can be run to transform the application source code.
 
@@ -106,7 +106,7 @@ If we now run
 
 from the root of the completeDuke source folder, the transformed source project should build correctly without any errors.
 
-#Deployment to Jakarta EE 9 Application Server
+## Deployment to Jakarta EE 9 Application Server
 
 I’ll be using [Wildfly 26.1.0-Preview](https://github.com/wildfly/wildfly/releases/download/26.1.0.Final/wildfly-preview-26.1.0.Final.zip) as my Jakarta EE9 Application Server. Wildfly has a bytecode transformation tool which deals with these issues so to prove our transformed app is Jakarta EE 9- compliant, we’ll use the unmanaged deployment mode, which bypasses the bytecode transformation.
 
@@ -155,7 +155,7 @@ You should see the successful greeting message in the log
 ========
 ```
 
-##Conclusion
+## Conclusion
 
 With the help of Windup and OpenRewrite we were able to auto-migrate the Complete Duke application so it could successfully be deployed on a Jakarta EE 9 application server. No manual coding was required, and the approach could be used to quickly migrate large numbers of applications to run on modern application servers.
 
