@@ -1,4 +1,12 @@
-#Auto-migration of apps from Java EE 8 to Jakarta EE 9 using Windup and Openrewrite
+---
+title: Auto-migration of apps from Java EE 8 to Jakarta EE 9 using Windup and Openrewrite
+description: Auto-migration of apps from Java EE 8 to Jakarta EE 9 using Windup and Openrewrite
+featured: true
+author: m-brophy
+date: 2022-08-17T00:00:00Z
+tags:
+  - docs
+---
 
 When modernizing applications a popular path is the transformation from one able to build and run on Java EE 8 to doing the same on Jakarta EE 9. Windup can help users discover the changes they need to make to their applications to achieve this, and using it in conjunction with OpenRewrite an auto-migration can be performed. This article will demonstrate an auto-migration on a sample application.
 
