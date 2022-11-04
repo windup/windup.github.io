@@ -11,12 +11,24 @@ const AboutPage = ({ data }) => {
       description: "Command Line Interface",
       url: `https://repo1.maven.org/maven2/org/jboss/windup/windup-cli/${windupVersion}/windup-cli-${windupVersion}-offline.zip`,
       sha1: `https://repo1.maven.org/maven2/org/jboss/windup/windup-cli/${windupVersion}/windup-cli-${windupVersion}-offline.zip.sha1`,
+      icon: <Download />,
+      iconLabel: "ZIP",
     },
     {
       title: "Web Console",
       description: "Web UI for local installation and Openshift deployment",
       url: `https://repo1.maven.org/maven2/org/jboss/windup/web/windup-web-distribution/${windupVersion}/windup-web-distribution-${windupVersion}-with-authentication.zip`,
       sha1: `https://repo1.maven.org/maven2/org/jboss/windup/web/windup-web-distribution/${windupVersion}/windup-web-distribution-${windupVersion}-with-authentication.zip.sha1`,
+      icon: <Download />,
+      iconLabel: "ZIP",
+    },
+    {
+      title: "Operator",
+      description: "For Kubernetes and OpenShift",
+      url: `https://operatorhub.io/operator/windup-operator`,
+      sha1: undefined,
+      icon: <Link />,
+      iconLabel: "OperatorHub",
     },
   ];
   const quickstart = `https://github.com/windup/windup-quickstarts/tree/${windupVersion}`;
@@ -50,18 +62,20 @@ const AboutPage = ({ data }) => {
                             className="flex hover:text-sky-900"
                             href={element.url}
                           >
-                            <Download />
-                            &nbsp;ZIP
+                            {element.icon}
+                            &nbsp;{element.iconLabel}
                           </a>
-                          <a
-                            href={element.sha1}
-                            download
-                            target="_blank"
-                            rel="noreferrer"
-                            className="hover:text-sky-900"
-                          >
-                            (sha1)
-                          </a>
+                          {element.sha1 && (
+                            <a
+                              href={element.sha1}
+                              download
+                              target="_blank"
+                              rel="noreferrer"
+                              className="hover:text-sky-900"
+                            >
+                              (sha1)
+                            </a>
+                          )}
                         </div>
                       </td>
                     </tr>
