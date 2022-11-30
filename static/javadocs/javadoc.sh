@@ -1,0 +1,1 @@
+/home/cferiavi/.sdkman/candidates/java/current/bin/javadoc -J-Xmx2400m @options @packages

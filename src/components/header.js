@@ -28,6 +28,11 @@ export const Header = () => {
       path: "/downloads/",
       title: "Downloads",
     },
+    {
+      path: "/javadocs/index.html",
+      title: "Javadocs",
+      openNewTab: true
+    },
   ];
 
   return (
