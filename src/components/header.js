@@ -28,6 +28,11 @@ export const Header = () => {
       path: "/downloads/",
       title: "Downloads",
     },
+    {
+      path: "https://windup.github.io/windup/docs/latest/javadoc/index.html",
+      title: "Javadocs",
+      openNewTab: true,
+    },
   ];
 
   return (
