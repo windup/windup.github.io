@@ -39,7 +39,7 @@ You can download Windup [here](https://windup.github.io/downloads/). I’m using
 
 Execute
 
-`./standalone.sh`
+`./run_windup.sh`
 
 to start up the web console, and go to localhost:8080 in your browser. Upload the complete-duke.war file we built previously, click Next
 
@@ -81,7 +81,7 @@ You should see a message like this in the terminal window:
 Again from the bin folder, run
 
 ```Shell
-./windup-cli --openrewrite "-DactiveRecipes=org.jboss.windup.javax-jakarta.PersistenceXml" "-Drewrite.configLocation=<path-to-windup-cli>/rules/openrewrite/jakarta/javax/xml/rewrite.yml" --input <path-to-local-source-project>/complete-duke/  --goal run
+./windup-cli --openrewrite "-DactiveRecipes=org.jboss.windup.jakarta.javax.PersistenceXml" "-Drewrite.configLocation=<path-to-windup-cli>/rules/openrewrite/jakarta/javax/xml/rewrite.yml" --input <path-to-local-source-project>/complete-duke/  --goal run
 ```
 
 And this time you should see messages like this:
@@ -112,7 +112,7 @@ I’ll be using Wildfly 26.1.0-Preview, which you can download  [here](https://g
 
 First, attempt to deploy the original complete-duke.war built from the untransformed source code. The easiest way to do this in unmanaged mode is to use the cli tools supplied with Wildfly. Start the server by going to the bin folder of the unzipped distribution and run
 
-`/standalone.sh`
+`./standalone.sh`
 
 Again, make sure the logging level is set to CONFIG. From the bin folder start the cli tool
 
