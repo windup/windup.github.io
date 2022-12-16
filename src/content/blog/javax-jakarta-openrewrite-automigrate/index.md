@@ -67,10 +67,10 @@ We can see the issues are the package name changes, property names, Bootstrappin
 
 The CLI flavour of Windup has openrewrite recipes bundled which allow for the auto-migration of an app such as complete-duke to run on a Jakarta EE9-compliant server. Using the windup-cli shell script with the -–openrewrite switch, these recipes can be run to transform the application source code.
 
-Go to the bin folder of your mta-cli distribution and run
+Go to the bin folder of your windup-cli distribution and run
 
 ```Shell
-./windup-cli --openrewrite "-DactiveRecipes=org.jboss.windup.JavaxToJakarta" "-Drewrite.configLocation=<path-to-mta-cli>/rules/openrewrite/jakarta/javax/imports/rewrite.yml" --input <path-to-local-source-project>/complete-duke/  --goal run
+./windup-cli --openrewrite "-DactiveRecipes=org.jboss.windup.JavaxToJakarta" "-Drewrite.configLocation=<path-to-windup-cli>/rules/openrewrite/jakarta/javax/imports/rewrite.yml" --input <path-to-local-source-project>/complete-duke/  --goal run
 ```
 
 You should see a message like this in the terminal window:
@@ -81,7 +81,7 @@ You should see a message like this in the terminal window:
 Again from the bin folder, run
 
 ```Shell
-./windup-cli --openrewrite "-DactiveRecipes=org.jboss.windup.javax-jakarta.PersistenceXml" "-Drewrite.configLocation=<path-to-mta-cli>/rules/openrewrite/jakarta/javax/xml/rewrite.yml" --input <path-to-local-source-project>/complete-duke/  --goal run
+./windup-cli --openrewrite "-DactiveRecipes=org.jboss.windup.javax-jakarta.PersistenceXml" "-Drewrite.configLocation=<path-to-windup-cli>/rules/openrewrite/jakarta/javax/xml/rewrite.yml" --input <path-to-local-source-project>/complete-duke/  --goal run
 ```
 
 And this time you should see messages like this:
@@ -92,7 +92,7 @@ And this time you should see messages like this:
 Finally run this from the same location
 
 ```Shell
-./windup-cli --openrewrite "-DactiveRecipes=org.jboss.windup.jakarta.javax.BootstrappingFiles" "-Drewrite.configLocation=<path-to-mta-cli>/rules/openrewrite/jakarta/javax/bootstrapping/rewrite.yml" --input <path-to-local-source-project>/complete-duke/  --goal run
+./windup-cli --openrewrite "-DactiveRecipes=org.jboss.windup.jakarta.javax.BootstrappingFiles" "-Drewrite.configLocation=<path-to-windup-cli>/rules/openrewrite/jakarta/javax/bootstrapping/rewrite.yml" --input <path-to-local-source-project>/complete-duke/  --goal run
 ```
 
 Resulting in messages like this:
