@@ -35,7 +35,7 @@ In the target subfolder will be the built application complete-duke.war. We will
 
 Now we’re happy we can build the Java EE 8 application, let’s analyse it using Windup to see what needs to change if we wish to migrate it to Jakarta EE 9.
 
-You can download Windup [here](https://windup.github.io/downloads/). I’m using the web console tool in this case but you can perform the same analysis from the command line with the CLI tool if you wish. Extract the contents of the downloaded zip file to your local machine, open a terminal window and navigate to the bin folder.
+You can download Windup [here](https://windup.github.io/downloads/). I’m using the web console tool in this case but you can perform the same analysis from the command line with the CLI tool if you wish. Extract the contents of the downloaded zip file to your local machine, open a terminal window.
 
 Execute
 
