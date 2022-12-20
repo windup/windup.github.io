@@ -35,11 +35,11 @@ In the target subfolder will be the built application complete-duke.war. We will
 
 Now we’re happy we can build the Java EE 8 application, let’s analyse it using Windup to see what needs to change if we wish to migrate it to Jakarta EE 9.
 
-You can download Windup [here](https://windup.github.io/downloads/). I’m using the web console tool in this case but you can perform the same analysis from the command line with the CLI tool if you wish. Extract the contents of the downloaded zip file to your local machine, open a terminal window and navigate to the bin folder.
+You can download Windup [here](https://windup.github.io/downloads/). I’m using the web console tool in this case but you can perform the same analysis from the command line with the CLI tool if you wish. Extract the contents of the downloaded zip file to your local machine, open a terminal window.
 
 Execute
 
-`./standalone.sh`
+`./run_windup.sh`
 
 to start up the web console, and go to localhost:8080 in your browser. Upload the complete-duke.war file we built previously, click Next
 
@@ -67,10 +67,10 @@ We can see the issues are the package name changes, property names, Bootstrappin
 
 The CLI flavour of Windup has openrewrite recipes bundled which allow for the auto-migration of an app such as complete-duke to run on a Jakarta EE9-compliant server. Using the windup-cli shell script with the -–openrewrite switch, these recipes can be run to transform the application source code.
 
-Go to the bin folder of your mta-cli distribution and run
+Go to the bin folder of your windup-cli distribution and run
 
 ```Shell
-./windup-cli --openrewrite "-DactiveRecipes=org.jboss.windup.JavaxToJakarta" "-Drewrite.configLocation=<path-to-mta-cli>/rules/openrewrite/jakarta/javax/imports/rewrite.yml" --input <path-to-local-source-project>/complete-duke/  --goal run
+./windup-cli --openrewrite "-DactiveRecipes=org.jboss.windup.JavaxToJakarta" "-Drewrite.configLocation=<path-to-windup-cli>/rules/openrewrite/jakarta/javax/imports/rewrite.yml" --input <path-to-local-source-project>/complete-duke/  --goal run
 ```
 
 You should see a message like this in the terminal window:
@@ -81,7 +81,7 @@ You should see a message like this in the terminal window:
 Again from the bin folder, run
 
 ```Shell
-./windup-cli --openrewrite "-DactiveRecipes=org.jboss.windup.javax-jakarta.PersistenceXml" "-Drewrite.configLocation=<path-to-mta-cli>/rules/openrewrite/jakarta/javax/xml/rewrite.yml" --input <path-to-local-source-project>/complete-duke/  --goal run
+./windup-cli --openrewrite "-DactiveRecipes=org.jboss.windup.jakarta.javax.PersistenceXml" "-Drewrite.configLocation=<path-to-windup-cli>/rules/openrewrite/jakarta/javax/xml/rewrite.yml" --input <path-to-local-source-project>/complete-duke/  --goal run
 ```
 
 And this time you should see messages like this:
@@ -92,7 +92,7 @@ And this time you should see messages like this:
 Finally run this from the same location
 
 ```Shell
-./windup-cli --openrewrite "-DactiveRecipes=org.jboss.windup.jakarta.javax.BootstrappingFiles" "-Drewrite.configLocation=<path-to-mta-cli>/rules/openrewrite/jakarta/javax/bootstrapping/rewrite.yml" --input <path-to-local-source-project>/complete-duke/  --goal run
+./windup-cli --openrewrite "-DactiveRecipes=org.jboss.windup.jakarta.javax.BootstrappingFiles" "-Drewrite.configLocation=<path-to-windup-cli>/rules/openrewrite/jakarta/javax/bootstrapping/rewrite.yml" --input <path-to-local-source-project>/complete-duke/  --goal run
 ```
 
 Resulting in messages like this:
@@ -112,7 +112,7 @@ I’ll be using Wildfly 26.1.0-Preview, which you can download  [here](https://g
 
 First, attempt to deploy the original complete-duke.war built from the untransformed source code. The easiest way to do this in unmanaged mode is to use the cli tools supplied with Wildfly. Start the server by going to the bin folder of the unzipped distribution and run
 
-`/standalone.sh`
+`./standalone.sh`
 
 Again, make sure the logging level is set to CONFIG. From the bin folder start the cli tool
 
