@@ -27,7 +27,7 @@ module.exports = {
       },
     ],
     windup: {
-      version: "6.1.4.Final",
+      version: "6.1.5.Final",
       idePlugins: [
         {
           title: "IntelliJ (Tech preview)",
