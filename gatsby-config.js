@@ -29,18 +29,18 @@ module.exports = {
     windup: {
       version: "6.1.7.Final",
       idePlugins: [
-        {
-          title: "IntelliJ (Tech preview)",
-          url: "https://plugins.jetbrains.com/plugin/17389-migration-toolkit-for-applications-mta-by-red-hat",
-        },
+        // {
+        //   title: "IntelliJ (Tech preview)",
+        //   url: "https://plugins.jetbrains.com/plugin/17389-migration-toolkit-for-applications-mta-by-red-hat",
+        // },
         {
           title: "VSCode",
-          url: "https://marketplace.visualstudio.com/items?itemName=redhat.mta-vscode-extension",
+          url: "https://marketplace.visualstudio.com/items?itemName=redhat.windup-vscode-extension",
         },
-        {
-          title: "Eclipse CHE/CodeReady Workspace (hosted, Tech Preview)",
-          url: "https://open-vsx.org/extension/redhat/mta-vscode-extension",
-        },
+        // {
+        //   title: "Eclipse CHE/CodeReady Workspace (hosted, Tech Preview)",
+        //   url: "https://open-vsx.org/extension/redhat/mta-vscode-extension",
+        // },
       ],
     },
   },
