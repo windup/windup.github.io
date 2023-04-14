@@ -3,7 +3,7 @@ title: Get started
 description: Get started instructions
 featured: true
 author: PhilipCattanach
-date: 2022-08-03T00:00:00Z
+date: '2022-08-03T00:00:00Z'
 tags:
   - docs
 ---
