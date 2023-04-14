@@ -8,7 +8,7 @@ tags:
   - release notes
 ---
 
-# New features
+## New features
 Some of the features below have been published in previous z-stream versions of Windup 6.1. But they have been listed here for completeness.  
 
 ## New reports
@@ -24,23 +24,18 @@ A new filter on the Issues report allows issues to be filtered by migration targ
 - `--skipSourceCodeReports`: the source code report allows users to view migration issues within the context of the application source code. Having all of the analyzed applications source code visible within the reports could be a security concern. This option will suppress the generation of the source code report, but all the other reports are still generated
 
 ## Multi-platform/arch containers
-For users that want to run the CLI within a container there are now 4 different architectures (amd64, arm64, ppc64le and s390x) supported. [Quay.io](https://quay.io/repository/windupeng/windup-cli-openshift?tab=tags&tag=6.2.0.Final) will automatically provide the version appropriate for you.
+For users that want to run the CLI within a container there are now 4 different architectures (amd64, arm64, ppc64le and s390x) available. [Quay.io](https://quay.io/repository/windupeng/windup-cli-openshift?tab=tags&tag=6.2.0.Final) will automatically provide the version appropriate for you.
 
 ## New rulesets and targets
-This release contains the complete set of rules to support users adopting JBoss EAP 8.0 Beta and Hibernate 6.2.
-
-A new `azure-spring-apps` target has been introduced for migrating Spring applications to Azure.
-
-A new `discovery `target has been introduced that will only execute the rules that identify the technologies embedded within the application. It provides an efficient way of understanding the technology landscape for the collection of applications being analyzed that will inform the migration strategy for each.
-
-For Hibernate users we have introduced a new target shortcut `hibernate6`. When an analysis is executed with that target supplied, all of the rulesets that have the `hibernate:6` or `jakarta-ee` target are used within the analysis.
-
-The ability to map multiple targets to a single target shortcut (e.g. [`hibernate6.windup.technologytransformer.xml`](https://github.com/windup/windup-rulesets/blob/6.2.0.Final/rules/rules-reviewed/eap8/hibernate6.windup.technologytransformer.xml)).
+- This release contains the complete set of rules to support users adopting JBoss EAP 8.0 Beta and Hibernate 6.2.
+- A new `azure-spring-apps` target has been introduced for migrating Spring applications to Azure.
+- A new `discovery `target has been introduced that will only execute the rules that identify the technologies embedded within the application. It provides an efficient way of understanding the technology landscape for the collection of applications being analyzed that will inform the migration strategy for each.
+- For Hibernate users we have introduced a new target shortcut `hibernate6`. When an analysis is executed with that target supplied, all of the rulesets that have the `hibernate:6` or `jakarta-ee` target are used within the analysis.
+- The ability to map multiple targets to a single target shortcut (e.g. [`hibernate6.windup.technologytransformer.xml`](https://github.com/windup/windup-rulesets/blob/6.2.0.Final/rules/rules-reviewed/eap8/hibernate6.windup.technologytransformer.xml)).
 
 ## New Technology Tags
-The technology tags based upon Java EE deployment descriptors now include the version. For example `EJB 3.2`.
-
-Generate enterprise Java EE technology tags for Jakarta EE applications.
+- The technology tags based upon Java EE deployment descriptors now include the version. For example `EJB 3.2`
+- Generate enterprise Java EE technology tags for Jakarta EE applications
 
 ## Web UI package selection
 The package selection step of the analysis configuration has changed. The user must switch on package selection if they wish to nominate the list of packages to be included within the analysis. This change makes the Web UI behavior consistent with the CLI.  
