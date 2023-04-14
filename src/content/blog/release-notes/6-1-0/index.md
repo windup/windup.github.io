@@ -3,7 +3,7 @@ title: Windup 6.1.0 Release Notes
 description: Windup 6.1.0 Release Notes
 featured: false
 author: carlosthe19916
-date: '2022-11-08T00:00:00Z'
+date: 2022-11-08T00:00:00Z
 tags:
   - release notes
 ---
