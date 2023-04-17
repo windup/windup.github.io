@@ -86,8 +86,8 @@ const AboutPage = ({ data }) => {
           </div>
         </div>
 
-        {/* <div className="max-w-7xl mx-auto py-6 sm:px-6 lg:px-8">
-          <h1 className="text-2xl font-bold">IDE plugins</h1>
+        <div className="max-w-7xl mx-auto py-6 sm:px-6 lg:px-8">
+          <h1 className="text-2xl font-bold">IDE extensions</h1>
           <div className="px-4 py-6 sm:px-0 not-prose relative overflow-hidden ">
             <div className="relative overflow-auto">
               <table className="table-auto w-full">
@@ -114,7 +114,7 @@ const AboutPage = ({ data }) => {
               </table>
             </div>
           </div>
-        </div> */}
+        </div>
 
         <div className="max-w-7xl mx-auto py-6 sm:px-6 lg:px-8">
           <h1 className="text-2xl font-bold">Quickstarts</h1>
