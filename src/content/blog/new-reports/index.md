@@ -14,7 +14,7 @@ This important change gives Windup a modern look and feel making it easy for use
 
 ## How to generate the new reports
 
-The new reports are by default enabled and you can continue using Windup as you used to. The new reports are fully integrated with:
+Windup will generate the new format reports by default. The new reports are fully integrated with:
 
 - Windup CLI
 - Windup Web Console
@@ -32,18 +32,18 @@ $WINDUP_HOME/bin/windup-cli --input myApp.jar --target quarkus --legacyReports
 
 The old reports and the new one contain the same data.
 
-## Walk through main reports
+## Example Reports
 
 ### Application list
 
-View all applications analyzed and added to windup via `--input`.
+The Application list shows all the applications analyzed, and for each, the number of migration issues, story points and technology tags.
 
 ![Application list page](application_list.png "Application list")
 
-## Issues page
+## Issues
 
 - You can visualize `All applications` or _only one application_ issues using the selector `Application` located at the top of the page.
-- We added a set of powerful filters to the _issues table_ which will help you have a better visualization of identified issues.
+- We have added a set of powerful filters that enables you to be very selective as to which issues are visible on the report.
 
 ![Issues page](issues.png "Issues")
 
@@ -76,7 +76,7 @@ Depending of the characteristics of your application some reports might not be v
 
 ### Dashboard
 
-- You can visualize the overal information of each application.
+- This report provides a breakdown of issues and story points by issue category. And a breakdown of incidents by java package.
 
 ![Application details](application_details.png "Application details")
 
@@ -94,7 +94,7 @@ Depending of the characteristics of your application some reports might not be v
 
 ### EJB
 
-- You can see all EJB identified in your application.
+- You can see all EJBs identified in your application.
 
 ![Application EJBs](ejb.png "Application EJBs")
 
@@ -106,6 +106,6 @@ Depending of the characteristics of your application some reports might not be v
 
 ### Server resources
 
-- You can see all Datasources, JMS detinations, JMS Connection Factories, and Thread pools identified in your application.
+- You can see all Datasources, JMS destinations, JMS Connection Factories, and Thread pools identified in your application.
 
 ![Application server resources](server_resources.png "Application server resources")
