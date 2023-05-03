@@ -16,6 +16,8 @@ tags:
 - Rules report is missing the ruleset ID ([WINDUP-3840](https://issues.redhat.com/browse/WINDUP-3840))
 - `View rule` with Java rule has broken syntax highlighting ([WINDUP-3813](https://issues.redhat.com/browse/WINDUP-3813))
 - Improper alignment in case of file without references to source code ([WINDUP-3809](https://issues.redhat.com/browse/WINDUP-3809))
+- Incorrectly assumed 2.0.0.RELEASE > 2.0.0 ([WINDUP-3812](https://issues.redhat.com/browse/WINDUP-3812))
+- Maven plugin: `graph` folder isn't deleted ([WINDUP-3815](https://issues.redhat.com/browse/WINDUP-3815))
 - Typos ([ WINDUP-3805](https://issues.redhat.com/browse/WINDUP-3805) [WINDUP-3846](https://issues.redhat.com/browse/WINDUP-3846) [WINDUP-3795](https://issues.redhat.com/browse/WINDUP-3795))
 - dependencies updates for CVEs
 
