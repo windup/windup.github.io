@@ -12,7 +12,12 @@ tags:
 
 ### New rulesets
 
-- "JavaEE to Quarkus" migration path: JAX-RS ([WINDUPRULE-945](https://issues.redhat.com/browse/WINDUPRULE-945))
+- "JavaEE to Quarkus" ruleset manages ([WINDUPRULE-945](https://issues.redhat.com/browse/WINDUPRULE-945)):
+  - initial Maven project setup
+  - CDI
+  - JAX-RS
+  - Static resources
+  - new `quarkus3` migration target
 
 ### Bug fixes
 
