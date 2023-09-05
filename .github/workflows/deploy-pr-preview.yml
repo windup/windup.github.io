@@ -30,7 +30,7 @@ jobs:
       - name: Install Surge
         run: npm install -g surge
       - name: Deploy to Surge
-        run: surge ./public/ "${{steps.surge-url.outputs.result}}" --token 62bd7a07b9bf812ff8d3ea91ccd2dc2f
+        run: surge ./public/ "${{steps.surge-url.outputs.result}}" --token 70c4919b085fd50e932f1693b2a0714e
       - name: Post URL as PR comment
         uses: mshick/add-pr-comment@v1
         with:
