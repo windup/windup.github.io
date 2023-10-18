@@ -11,5 +11,5 @@ tags:
 # Bug fixes
 
 - New ruleset for JBoss EAP 8 migration (log4j-jboss-manager removal) ([WINDUPRULE-1018](https://issues.redhat.com/browse/WINDUPRULE-1018))
-- Security updates
+- Security updates for [CVE-2023-44487](https://nvd.nist.gov/vuln/detail/CVE-2023-44487)
  
